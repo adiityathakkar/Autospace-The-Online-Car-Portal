@@ -1,0 +1,167 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Log In </title>
+<link href="icon.png"" rel="shortcut icon" />
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  background-image: url(back.png);
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+  height: 100vh;
+}
+.menu-area li a {
+  text-decoration: none;
+}
+
+.menu-area li {
+  list-style-type: none;
+}
+
+.custom-padding{
+  padding-top: 25px;
+}
+
+nav {
+  position: relative;
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  padding: 10px 0;
+  background: #333;
+  z-index: 1;
+  text-align: right;
+  padding-right: 2%;
+}
+
+.logo {
+  width: 15%;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.menu-area li {
+  display: inline-block;
+}
+
+.menu-area a {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+}
+.menu-area a:hover {
+  background: tomato;
+  color: #fff;
+}
+
+.menu-area a:hover:after {
+  transform: translateY(-50%) rotate(-35deg);
+}
+
+nav:before {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-right: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  left: 0;
+}
+
+nav:after {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-left: 10px solid #333;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  right: 0;
+}
+.box{
+width: 400px;
+padding: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+background:#ffefdb;
+text-align: center;
+}
+.box input[type="text"],.box input[type="password"]{
+border:0;
+background:none;
+display:block;
+margin:20px auto;
+text-align:center;
+border:2px solid #3498db;
+padding:14px 10px;
+width:200px;
+outline:none;
+color:white;
+border-radius:24px;
+transition:0.25s;
+}
+</style>
+</head>
+<body>
+<body bgcolor="white">
+<font face="verdana" color="DarkSlateGray"><center><h1>AutoSpace</h1></center></font>
+<font face="verdana" color="DarkSlateGray"><center><h4>The Car Portal</h4></center></font>
+<div class="custom-padding">
+  <nav>
+    <div class="logo">AUTOSPACE</div>
+
+    <ul class="menu-area">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Brands.html">Brands</a></li>
+      <li><a href="Style.html">Style</a></li>
+      <li><a class="active" href="LogIn.html">Log In</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+    </ul>
+  </nav>
+<div style="padding-left:18px">
+</div>
+<br/>
+<form class="box" action="login.html" method="post">
+<h1>AutoSpace Log In</h1>
+<input type="text" name=""placeholder="USER ID">
+<input type="password" name=""placeholder="PASSKEY">
+<input type="submit" name=""value="Log In">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Style </title>
+<link href="icon.png"" rel="shortcut icon" />
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  background-image: url(back.png);
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+  height: 100vh;
+}
+.menu-area li a {
+  text-decoration: none;
+}
+
+.menu-area li {
+  list-style-type: none;
+}
+
+.custom-padding{
+  padding-top: 25px;
+}
+
+nav {
+  position: relative;
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  padding: 10px 0;
+  background: #333;
+  z-index: 1;
+  text-align: right;
+  padding-right: 2%;
+}
+
+.logo {
+  width: 15%;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.menu-area li {
+  display: inline-block;
+}
+
+.menu-area a {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+}
+.menu-area a:hover {
+  background: tomato;
+  color: #fff;
+}
+
+.menu-area a:hover:after {
+  transform: translateY(-50%) rotate(-35deg);
+}
+
+nav:before {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-right: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  left: 0;
+}
+
+nav:after {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-left: 10px solid #333;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  right: 0;
+}
+
+.row {
+  margin:px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: #E5E5E5;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+<body bgcolor="white">
+<font face="verdana" color="DarkSlateGray"><center><h1>AutoSpace</h1></center></font>
+<font face="verdana" color="DarkSlateGray"><center><h4>The Car Portal</h4></center></font>
+<div class="custom-padding">
+  <nav>
+    <div class="logo">AUTOSPACE</div>
+
+    <ul class="menu-area">
+     <li><a  href="Home.html">Home</a></li>
+      <li><a href="Brands.html">Brands</a></li>
+      <li><a class="active" href="Style.html">Style</a></li>
+      <li><a href="LogIn.html">Log In</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="main">
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="SUV.jpg" alt="SUV" style="width:100%">
+      <center><h3>SUV</h3></center><br>
+      <p>Sport utility vehicles are off-road vehicles with four-wheel drive and true off-road capability. They most often feature high ground clearance and an upright, boxy body design.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="Sports.jpg" alt="Sports Cars" style="width:100%">
+     <center> <h3>Sports</h3></center><br>
+      <p>Cars which prioritise handling or straight-line acceleration are called sports cars. Sports/performance cars can either be built on unique platforms or be upgraded versions of regular cars.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="sedan.jpg" alt="Sedan" style="width:100%">
+      <center><h3>Sedan</h3></center><br>
+      <p>In the United States, the equivalent term is mid-size or intermediate cars. The U.S. Environmental Protection Agency (EPA) defines a mid-size car as having a combined passenger and cargo volume of 110–119 cu ft (3.1–3.4 m3).</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="coupe.jpg" alt="Coupe" style="width:100%">
+     <center> <h3>Coupe</h3></center><br>
+      <p>A coupé or coupe is a passenger car with a sloping roofline and generally two doors (although several four-door cars have also been marketed as coupés).The term coupé comes from the French translation of "cut".</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="Hatchback.jpg" alt="Hatchback" style="width:100%">
+     <center> <h3>Hatchback</h3></center><br>
+      <p>The size of a subcompact car is defined by the United States Environmental Protection Agency, as having a combined interior and cargo volume of between 85–99 cubic feet.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="Luxury.jpg" alt="Luxury" style="width:100%">
+     <center> <h3>Luxury</h3></center><br>
+      <p>The largest size of luxury car is known as a luxury saloon in the U.K and a full-size luxury car in the United States. These cars are classified as F-segment cars in the European cars.</p>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+    <img src="convertible.jpg" alt="Convertible" style="width:100%">
+     <center> <h3>Convertible</h3></center><br>
+      <p>A convertible or cabriolet is a passenger car that can be driven with or without a roof in place. The methods of retracting and storing the roof vary between models. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="gt.jpg" alt="GranTurismo" style="width:100%">
+     <center> <h3>GranTurismo</h3></center><br>
+      <p>A grand tourer (GT) is a car that is designed for high speed and long-distance driving, due to a combination of performance and luxury attributes. The most common format is a front-engine.</p>
+    </div>
+  </div> 
+</div>
+
+
+</body>
+</html>
